@@ -1,0 +1,276 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    background-color: white;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    /* font-size: 22px; */
+    /* font-weight: 300; */
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    padding: 0 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 20px;
+    font-size: 18px;
+}
+
+form label {
+        display: grid;
+        grid-gap: 5px;
+
+    }
+.form {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 20px;   
+}
+
+form input {
+    height: 30px;
+    padding: 5px;
+}
+
+.form-1fr,
+.form-2fr {
+    grid-column: span 2;
+}
+
+.form-4fr {
+    grid-column: span 4;
+}
+
+.form-block {
+    grid-template-columns: repeat(3, 1fr);
+    display: block;
+    grid-gap: 20px;
+    
+}
+
+.form-left {
+    float: left;
+    margin-top: 5px;
+    margin-right: 20px;
+    
+}
+
+form textarea {
+    height: 150px;
+    padding: 5px;
+}
+
+.hintergrund-grau {
+    background-color: #D3D3D3;
+}
+
+.pad {
+        padding-top: 6px;
+        padding-left: 20px;
+}
+
+button {
+    width: 380px;
+    height: 80px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #008B00;
+    border: 2px solid #008B00;
+    border-radius: 3px;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+
+.grid-1 {
+	grid-template-columns: auto 1fr;
+}
+
+
+.col-12 {
+    grid-column: 1/-1;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-5 {
+    grid-column: span 5;
+} 
+
+
+
+@media only screen and (min-width:600px) {
+
+    .grid-container {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    
+    h2 {
+    font-size: 28px;
+    
+}
+    
+    form {
+    display: grid;
+    grid-gap: 20px;
+    font-size: 18px;
+}
+
+    form label {
+        display: grid;
+        grid-gap: 5px;
+
+    }
+    
+    .form {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 20px;   
+}
+
+    form input {
+    height: 30px;
+    padding: 5px;
+}
+
+    .form-1fr {
+    grid-column: span 1;
+}
+    
+    .form-2fr {
+    grid-column: span 2;
+}
+    
+    .form-block {
+    grid-template-columns: repeat(3, 1fr);
+    display: block;
+    grid-gap: 20px;
+    
+}
+    
+    .form-left {
+    float: left;
+    margin-top: 5px;
+    margin-right: 20px;
+    
+}
+    
+    form textarea {
+    height: 150px;
+    padding: 5px;
+}
+
+   
+}
+
+
+@media only screen and (min-width:1200px) {
+
+    .grid-container {
+        grid-template-columns: repeat(12, 1fr);
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    h2 {
+    font-size: 36px;
+    
+}
+    
+    
+    form {
+    display: grid;
+    grid-gap: 20px;
+    font-size: 18px;
+}
+
+    form label {
+        display: grid;
+        grid-gap: 5px;
+
+    }
+    
+    .form {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 20px;   
+}
+
+    form input {
+    height: 30px;
+    padding: 5px;
+}
+
+    .form-1fr {
+    grid-column: span 1;
+}
+    
+    .form-2fr {
+    grid-column: span 2;
+}
+    
+    .form-block {
+    grid-template-columns: repeat(3, 1fr);
+    display: block;
+    grid-gap: 20px;
+    
+}
+    
+    .form-left {
+    float: left;
+    margin-top: 5px;
+    margin-right: 20px;
+    
+}
+    
+    form textarea {
+    height: 150px;
+    padding: 5px;
+}
+    
+    
+    
+    .pad {
+        padding-top: 6px;
+        padding-left: 20px;
+    }
+    
+    
+    
+}
