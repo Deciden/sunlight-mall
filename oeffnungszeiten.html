@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sunlight Mall</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/favicon2.png">
+
+    <meta name="author" content="Derin Cifci">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet"> 
+
+    <!-- Responsive Gerätebreiten-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+
+<!--           ANFANG  Unter Header hinzufügen für Navi              -->
+
+
+<section class=" navi">
+            
+    <div class="grid-container">
+
+
+        <a href="index.html" class="col-3 logo"><img src="images/logo_cut.png" alt="Sunlight Logo"></a>
+
+        
+        <div class="navigation_button" onclick="toggleNavigation(this,'navlinks')">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <nav id="navlinks" class="">
+
+            <ul class="essentials">
+                <li> <a href="kontakt.html"><img src="images/kontakt-gr2.png" alt="" width="30px" height="30px"><span>Kontakt</span></a></li>
+                <li> <a href="lageplan.html"><img src="images/anfahrt-tr.png" alt=""width="30px" height="30px"><span>Lage</span></a></li>
+                <li> <a href="#"><img src="images/zeit-tr.png" alt=""width="30px" height="30px"><span>Öffnungszeiten</span></a></li>
+                
+            </ul>
+
+            <ul class="subpages">
+                <li><a href="shops.html">Unsere&nbsp;Läden</a></li>
+                <li><a href="center.html">Das&nbsp;Center</a></li>
+                <li><a href="hygienemassnahmen.html">Hygienemaẞnahmen</a></li>
+                <li><a href="gastro.html">Gastronomie</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">Events/News</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+
+</section>
+
+<script src="js/burgermenu.js"></script> 
+
+<!--            ENDE   Unter Header hinzufügen für Navi          -->
+
+    </header>
+
+    <main>
+
+            
+    <!--        BÜHNENELEMENT       -->
+
+        <section id="oeffnung" class="bühnenelement">
+                    
+            <img src="images/Home_Pic.jpg" alt="Bühnenbild">
+            
+            <h1>öffnungszeiten</h1>
+
+        </section>
+
+    <!--        BÜHNENELEMENT ENDE      -->
+    
+    <!--        Öffnungszeiten    -->
+    
+    <section class="oeffnung">
+        <div class="grid-container">
+            <table class="col-12">
+
+            <tbody>
+                <tr>
+                    <td>Montag - Freitag</td>
+                    <td>09:00 - 20:00 Uhr</td>
+                </tr>
+                <tr>
+                    <td>Samstag</td>
+                    <td>10:00 - 19:00 Uhr</td>
+                </tr>
+                <tr>
+                    <td>Sonntag & Feiertage</td>
+                    <td>geschlossen</td>
+                </tr>
+            </tbody>
+                </table>
+        </div>
+    </section>
+    <!--        Öffnungszeiten ENDE      -->
+
+    <!--        ANFAHRT      -->
+
+    <section id="anfahrt">
+
+        <div class="grid-container">
+
+            <h2 class="col-12">Anfahrt</h2>
+
+            <div>
+                <h3>mit dem öpnv</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div>
+                <h3>Zufuss oder mit dem Fahrrad</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div>
+                <h3>mit dem Auto</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--        ANFAHRT ENDE      -->
+    
+
+        <!-- Karte -->
+        <section>
+
+            <div class="grid-container">
+                <div class="mapouter col-12">
+                    <div class="gmap_canvas">
+                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Stammstra%C3%9Fe%207,%2050823%20K%C3%B6ln&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe><a href="https://www.embedgooglemap.net"></a>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    
+            <!-- Karte ende -->
+    
+    </main>
+
+    <footer>
+        <section>
+            <div class="grid-container">
+                <p class="col-4">
+                <span>USMG Marketplaces GmbH & Co. KG</span>
+                Sunlight Mall Köln<br>
+                Mall Management<br>
+                Strammstraße 7<br>
+                50825 Köln - Ehrenfeld
+                </p>
+            
+                <table class="col-4">
+                    <thead>
+                        <th>Öffnungszeiten</th>
+                    </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Montag - Freitag</td>
+                        <td>09:00 - 20:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td>Samstag</td>
+                        <td>10:00 - 19:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td>Sonntag & Feiertage</td>
+                        <td>geschlossen</td>
+                    </tr>
+                </tbody>
+                    </table>
+    
+                <div class="col-4">
+                    <a href="impressum.html#impressum-anchor">Impressum</a>
+                    <a href="impressum.html#agb-anchor">AGB</a>
+                    <a href="impressum.html#datenschutz-anchor">Datenschutz</a>
+                </div>
+    
+                <div class="col-4">
+                    <span>Zahlungsarten</span>
+                        <img src="images/sepa.png" alt="sepa">
+                        <img src="images/giro.png" alt="giro">
+                        <img src="images/visa.png" alt="visa">
+                        <img src="images/mastercard.png" alt="mastercard">
+                </div>
+    
+                <div class="col-4">
+                    <span>Soziale Medien</span>
+                        <a href=""><img src="images/instagram.png" alt="instagram"></a>
+                        <a href=""><img src="images/fb.png" alt="facebook"></a>
+                        <a href=""><img src="images/twitter.png" alt="twitter"></a>
+                </div>
+    
+                <div class="col-4">
+                    <span>Unsere Center-App</span>
+                        <a href=""><img src="images/sm_app.png" alt="SunlightMallApp"></a>
+                        <a href=""><img src="images/googleps.png" alt="playstore"></a>
+                </div>
+    
+    
+            </div>
+        </section>
+
+    </footer>
+
+    
+</body></html>

@@ -1,0 +1,81 @@
+header {
+        background-image: url(../images/cover-home-h.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px; 
+        margin: 0;
+        margin-top: 20px;
+    }
+
+.h1-tr {
+	color: aliceblue;
+    opacity: 0;
+}
+.green h6 {
+    background-color: #008b00;
+    color: #fff;
+    opacity: 0.65;
+}
+.p-l-r-30 {
+    padding: 30px;
+}
+.p-l-r-50 {
+    padding: 0 50px;
+}
+.w-i {
+    grid-column: span 4;
+}
+.a-pad {
+    display: grid;
+    justify-content: center;
+}
+.menu-icon {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+.menu-icon-2 {
+	font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+@media only screen and (min-width:880px) {
+    header {
+        background-image: url(../images/cover-home-t.jpg);
+        background-position: center -100px;
+        height: 400px; 
+    }
+    .p-l-r-50 {
+        padding: 0;
+    }
+    .w-i {
+        grid-column: span 2;
+    }
+    
+}
+
+
+
+@media only screen and (min-width:1280px) {
+    header {
+        background-image: url(../images/cover-home-pc.jpg);
+        background-position: center -200px;
+        height: 550px; 
+    }
+    
+    .green {
+        margin: 50px;
+    }
+    .w-i {
+        grid-column: span 4;
+    }
+    
+    
+}
