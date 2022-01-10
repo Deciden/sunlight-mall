@@ -25,45 +25,47 @@
 <!--           ANFANG  Unter Header hinzufügen für Navi              -->
 
 
-        <section class="grid-container navi"> 
+<section class=" navi">
+            
+    <div class="grid-container">
 
 
-                <div class="col-3 logo"><img src="/images/logo_cut.png" alt="Sunlight Logo"></div>
+        <a href="index.html" class="col-3 logo"><img src="images/logo_cut.png" alt="Sunlight Logo"></a>
 
+        
+        <div class="navigation_button" onclick="toggleNavigation(this,'navlinks')">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <nav id="navlinks" class="">
+
+            <ul class="essentials">
+                <li> <a href="kontakt.html"><img src="images/kontakt-gr2.png" alt="" width="30px" height="30px"><span>Kontakt</span></a></li>
+                <li> <a href="lageplan.html"><img src="images/anfahrt-tr.png" alt=""width="30px" height="30px"><span>Lage</span></a></li>
+                <li> <a href="oeffnungszeiten.html"><img src="images/zeit-tr.png" alt=""width="30px" height="30px"><span>Öffnungszeiten</span></a></li>
                 
-                <div class="navigation_button" onclick="toggleNavigation(this,'navlinks')">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
+            </ul>
 
-                <nav id="navlinks" class="">
+            <ul class="subpages">
+                <li><a href="shops.html">Unsere&nbsp;Läden</a></li>
+                <li><a href="center.html">Das&nbsp;Center</a></li>
+                <li><a href="#">Hygienemaẞnahmen</a></li>
+                <li><a href="gastro.html">Gastronomie</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">Events/News</a></li>
 
-                    <ul class="essentials">
-                        <li> <a href="kontakt.html"><img src="/images/kontakt-gr2.png" alt="" width="30px" height="30px"><span>Kontakt</span></a></li>
-                        <li> <a href="lageplan.html"><img src="/images/anfahrt-tr.png" alt=""width="30px" height="30px"><span>Lage</span></a></li>
-                        <li> <a href="oeffnungszeiten.html"><img src="/images/zeit-tr.png" alt=""width="30px" height="30px"><span>Öffnungszeiten</span></a></li>
-                        
-                    </ul>
+            </ul>
 
-                    <ul class="subpages">
-                        <li><a href="shops.html">Unsere&nbsp;Läden</a></li>
-                        <li><a href="center.html">Das&nbsp;Center</a></li>
-                        <li><a href="#">Hygienemaẞnahmen</a></li>
-                        <li><a href="gastro.html">Gastronomie</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="news.html">Events/News</a></li>
+        </nav>
 
-                    </ul>
-
-                </nav>
+    </div>
 
 
+</section>
 
-
-        </section>
-
-        <script src="/js/burgermenu.js"></script> 
+<script src="js/burgermenu.js"></script> 
 
 <!--            ENDE   Unter Header hinzufügen für Navi          -->
 
@@ -71,12 +73,23 @@
 
     <main>
 
+    <!--        BÜHNENELEMENT       -->
+
+    <section id="oeffnung" class="bühnenelement">
+                    
+        <img src="images/Home_Pic.jpg" alt="Bühnenbild">
+        
+        <h1>hygienemassnahmen</h1>
+
+    </section>
+
+<!--        BÜHNENELEMENT ENDE      -->
+
         
         <!--            Hygienemaßnahmen            -->
 
         <section>
             <div class="grid-container">
-                <h1 class="col-12">Hygienemaßnahmen</h1>
                 <p class="col-12">Liebe Kunden, Liebe Mieter,</p>
                 <p class="col-12">
                 wir freuen uns, dass wir wieder für Euch da sein können! 
@@ -168,9 +181,68 @@
     </main>
 
     <footer>
+        <section>
+            <div class="grid-container">
+                <p class="col-4">
+                <span>USMG Marketplaces GmbH & Co. KG</span>
+                Sunlight Mall Köln<br>
+                Mall Management<br>
+                Strammstraße 7<br>
+                50825 Köln - Ehrenfeld
+                </p>
+            
+                <table class="col-4">
+                    <thead>
+                        <th>Öffnungszeiten</th>
+                    </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Montag - Freitag</td>
+                        <td>09:00 - 20:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td>Samstag</td>
+                        <td>10:00 - 19:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td>Sonntag & Feiertage</td>
+                        <td>geschlossen</td>
+                    </tr>
+                </tbody>
+                    </table>
+    
+                <div class="col-4">
+                    <a href="impressum.html#impressum-anchor">Impressum</a>
+                    <a href="impressum.html#agb-anchor">AGB</a>
+                    <a href="impressum.html#datenschutz-anchor">Datenschutz</a>
+                </div>
+    
+                <div class="col-4">
+                    <span>Zahlungsarten</span>
+                        <img src="images/sepa.png" alt="sepa">
+                        <img src="images/giro.png" alt="giro">
+                        <img src="images/visa.png" alt="visa">
+                        <img src="images/mastercard.png" alt="mastercard">
+                </div>
+    
+                <div class="col-4">
+                    <span>Soziale Medien</span>
+                        <a href=""><img src="images/instagram.png" alt="instagram"></a>
+                        <a href=""><img src="images/fb.png" alt="facebook"></a>
+                        <a href=""><img src="images/twitter.png" alt="twitter"></a>
+                </div>
+    
+                <div class="col-4">
+                    <span>Unsere Center-App</span>
+                        <a href=""><img src="images/sm_app.png" alt="SunlightMallApp"></a>
+                        <a href=""><img src="images/googleps.png" alt="playstore"></a>
+                </div>
+    
+    
+            </div>
+        </section>
 
-
-        
     </footer>
 
     
