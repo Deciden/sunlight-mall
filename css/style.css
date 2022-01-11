@@ -406,7 +406,6 @@ section div.restaurants-grid {
 
 .restaurants img {
     justify-self: center;
-    height: 180px;
     border: solid 1px #008B00;
 
 }
@@ -774,6 +773,12 @@ ul.subpages {
         max-width: 900px;
         row-gap: 100px;
         margin: 0 auto;
+    }
+    
+    .restaurants img {
+        
+        height: 180px;
+    
     }
 
     /*          --- restaurants-T ENDE---           */
