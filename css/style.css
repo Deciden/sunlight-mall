@@ -6,18 +6,18 @@ body {
     color: black;
     background-color: white;
 }
- 
+
 main {
-    margin-top: 160px; 
- }
- 
+    margin-top: 160px;
+}
+
 
 main section {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-main section:nth-child(even){
+main section:nth-child(even) {
     background: #EDEEED;
 }
 
@@ -26,8 +26,9 @@ footer .grid-container {
 }
 
 footer img {
-    display:initial;
+    display: initial;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -48,22 +49,22 @@ footer img {
 
 .col-12 {
     grid-column: 1/-1;
- }
+}
 
 .col-3 {
-   grid-column: span 3;
+    grid-column: span 3;
 }
 
 img {
-   max-width: 100%;
+    max-width: 100%;
 
-   display: block;
+    display: block;
 }
 
 /*          --- Universelle Regeln ENDE ---          */
 
 /*          --- section formatierungen-M---    */
-p{
+p {
     margin: 0;
 }
 
@@ -103,16 +104,25 @@ h3 {
 /*          --- services INFOBOX ---         */
 
 .infobox {
-    justify-self: center;
+    /* justify-self: center; */
     height: 370px;
     max-width: 380px;
 }
 
-.infobox img{
-    margin: 20px auto;
+.infobox div {
+    height: 230px;
+    align-items: center;
+    display: grid;
+    background-color: #EDEEED;
 }
 
-.infobox p{
+.infobox img {
+
+    margin: 0 auto;
+    max-height: 180px;
+}
+
+.infobox p {
     font-family: 'Ubuntu';
     font-size: 18px;
     height: 100px;
@@ -128,35 +138,53 @@ h3 {
 
 /*          --- services INFOBOX ENDE---         */
 
+
+/*          --- Lageplan ---            */
+
+    main section.lageplan {
+        background-color: transparent;
+    }
+
+    .lageplan div.col-12 {
+        margin: 0 20px;
+    }
+
+    .lageplan img {
+        margin:0 auto;
+    }
+
+/*          --- Lageplan ENDE---            */
+
 /*          --- oeffnungszeiten ---         */
 
-section.oeffnung div.grid-container table{
+section.oeffnung div.grid-container table {
     display: grid;
     justify-self: center;
 }
 
-section.oeffnung div.grid-container td{
+section.oeffnung div.grid-container td {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 /*          --- oeffnungszeiten ENDE---         */
 
 /*          --- Adresse ---         */
 
-section#adresse p.col-12{
+section#adresse p.col-12 {
     justify-self: center;
     text-align: left;
-    width: 287px;
+    width: 380px;
     margin: 0;
-    
-    }
-    
+    font-weight: 300;
+}
+
 
 /*          --- Adresse ENDE---         */
 
 /*          --- impressum-artikel-D ---         */
 
-.impressum-artikel p{
+.impressum-artikel p {
     grid-column: 1/-1;
 
     margin: 0 20px 0 20px;
@@ -172,16 +200,23 @@ section#adresse p.col-12{
     padding-top: 0;
 }
 
-.bühnenelement img {
+.bühnenelement div {
 
-   justify-self: center;
-   max-height: 460px;
-   min-height: 260px;
+    justify-self: center;
+    max-height: 190px;
+    overflow: hidden;
 }
+
+.bühnenelement img {
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: none;
+}
+
 /*          --- Bühnenelement-M ENDE---         */
 
 /*          --- Philosophie-M ---           */
-.philosophie div{
+.philosophie div {
     display: grid;
     justify-content: center;
     max-width: 1920px;
@@ -190,16 +225,17 @@ section#adresse p.col-12{
 }
 
 .bauchbinde {
-    background: url(../images/bauchbinde\ full.png)no-repeat center;
+    background: url(../images/bauchbinde\ full.jpg)no-repeat center;
     background-position-y: 35%;
-    width:100%;
+    width: 100%;
     height: 200px;
-    
+
     overflow: hidden;
 }
-.philosophie p{
-    background: url(../images/logo-sunlight.png) no-repeat center;
-    background-size: contain;
+
+.philosophie p {
+    /* background: url(../images/logo-sunlight.png) no-repeat center;
+    background-size: contain; */
     margin-top: 50px;
     min-width: 320px;
     padding: 0 20px 0 20px;
@@ -209,17 +245,17 @@ section#adresse p.col-12{
 /*          --- Philosophie-M ENDE---           */
 
 /*          --- Center-Links-M ---         */
-.center-links .grid-container{
+.center-links .grid-container {
     padding: 0 20px
 }
 
-section.center-links img{
+section.center-links img {
     display: flex;
     justify-self: center;
-    width: 150px;
+    max-height: 100px;
 }
 
-main section.center-links{
+main section.center-links {
     background: initial;
 }
 
@@ -232,7 +268,7 @@ main section.center-links{
 }
 
 
-.center-links a{
+.center-links a {
     display: grid;
     grid-column: span 4;
     min-height: 380px;
@@ -242,6 +278,7 @@ main section.center-links{
     background-color: #EDEEED;
     text-decoration: transparent;
 }
+
 /*      --- Links Pseudo elemente ---    */
 
 section.center-links a:focus {
@@ -262,7 +299,31 @@ section.center-links a:enabled {
     text-decoration: underline #008B00 3px;
 }
 
-    /*      --- Link Pseudo elemente ENDE---    */
+section.center-links a#nolink:focus {
+    outline: none;
+}
+
+section.center-links a#nolink:hover {
+    transform: scale(104%);
+    transition: 0.1s;
+}
+
+section.center-links a#nolink:active {
+    transform: scale(96%);
+}
+
+section.center-links a#nolink:enabled {
+    transform: scale(96%);
+    text-decoration: underline #008B00 3px;
+}
+
+section.center-links a#nolink:hover{
+    transform: none;
+    cursor: initial;
+    
+}
+
+/*      --- Link Pseudo elemente ENDE---    */
 
 /*          --- Center-Links-M ENDE ---         */
 
@@ -280,7 +341,7 @@ section.logo-container {
     width: 180px;
     justify-self: center;
     border: solid 1px #008B00;
- 
+
 }
 
 
@@ -289,20 +350,20 @@ section.logo-container {
 
 /*karte - m*/
 
-.mapouter{
-    position:relative;
-    text-align:center;
+.mapouter {
+    position: relative;
+    text-align: center;
     padding: 0 20px 0 20px;
 }
-    
+
 .gmap_canvas {
-    overflow:hidden;
-    background:none;
+    overflow: hidden;
+    background: none;
 }
 
 iframe {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     min-height: 490px;
     /* min-width: 350px; */
     max-width: 780px;
@@ -313,9 +374,9 @@ iframe {
 
 /*          anfahrt-M         */
 
-section#anfahrt div div{
+section#anfahrt div div {
     grid-column: span 4;
-    }
+}
 
 
 /*          anfahrt-M ENDE         */
@@ -331,72 +392,79 @@ section#anfahrt div div{
     text-align: left;
     margin: 30px auto 20px auto;
 }
+
 /*          --- News-Artikel-M  ENDE           */
 
 /*          --- restaurants-M ---              */
-section div.restaurants-grid{
+section div.restaurants-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 0px;
     margin: 0 20px;
 }
 
 .restaurants img {
     justify-self: center;
     border: solid 1px #008B00;
- 
+
 }
+
 /*          --- restaurants-M ENDE---           */
 
 /*          --- section formatierungen-M ENDE   ---          */
 
 /* FOOTER - m */
-footer{
-background-color: #6E736E;
-color: white;
-padding: 60px 0 0 0;
+footer {
+    font-family: 'ubuntu', sans sarif;
+    background-color: #6E736E;
+    color: white;
+    padding: 60px 0 0 0;
+    font-size: 14px;
 
 }
 
-footer p{
-line-height: 28.71px;
-margin: 0;
+footer p {
+    line-height: 28.71px;
+    margin: 0;
 }
 
-footer span, footer th{
-font-weight: normal;
-display: block;
+footer span,
+footer th {
+    font-weight: normal;
+    display: block;
 }
 
-footer table{
-text-align: left;
-padding: 0;
+footer table {
+    text-align: left;
+    padding: 0;
 }
 
-footer td{
-padding: 11px 0;
+footer td {
+    padding: 11px 0;
 }
 
-footer a{
-color:white;
-margin: 0 20px 0 0;
+footer a {
+    color: white;
+    margin: 0 20px 0 0;
 
 }
 
-footer table, footer p, footer div.col-4{
-margin: 0 0 60px 0;
+footer table,
+footer p,
+footer div.col-4 {
+    margin: 0 0 60px 0;
 }
 
-footer div.col-4{
-text-align: center;
+footer div.col-4 {
+    text-align: center;
 }
 
-footer div.col-4 img{
-padding: 20px 20px 0 0
+footer div.col-4 img {
+    padding: 20px 20px 0 0
 }
 
-footer div.col-4 span{
-text-align: left;
+footer div.col-4 span {
+    text-align: left;
 }
 
 /* FOOTER - m - ende*/
@@ -425,6 +493,7 @@ nav a:hover {
 nav a:active {
     font-size: smaller;
 }
+
 /*      ----        INTERAKTIVE PSEUDO ELEMENTE ENDE     ----        */
 
 .logo {
@@ -441,7 +510,10 @@ nav a:active {
 
     position: fixed;
     z-index: 99;
-    top: 0; left: 0; right: 0; /*   Positionierung  */
+    top: 0;
+    left: 0;
+    right: 0;
+    /*   Positionierung  */
 }
 
 .navi .grid-container {
@@ -455,12 +527,12 @@ nav a:active {
 }
 
 .navi li img {
-    
 
-    /*  Bei nativer bildkorrektur LÖSCHEN!  */
+
+    /* Bei nativer bildkorrektur LÖSCHEN! */
     width: 48px;
     height: 48px;
- }
+}
 
 .navi nav a {
     text-decoration: none;
@@ -495,8 +567,11 @@ ul.subpages {
     font-family: Ubuntu;
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 700;
-    padding-left: 10px;
+    font-weight: 300;
+    /* padding-left: 10px; */
+}
+.subpages a {
+    padding: 20px;
 }
 
 .navi #navlinks {
@@ -504,11 +579,11 @@ ul.subpages {
     position: absolute;
     /* top: 120px; */
     /*Alternativ:*/
-    
+
     top: 44px;
-    right:40px;
-    width: 300px;
-   
+    right: 40px;
+    width: 340px;
+
     right: 20px;
     margin: auto 0;
     transition: none;
@@ -528,7 +603,7 @@ ul.subpages {
     top: 60px;
     right: 30px;
     margin: auto;
-    z-index:99;
+    z-index: 99;
 }
 
 .bar1,
@@ -540,7 +615,7 @@ ul.subpages {
     margin: 6px 0;
     transition: 0.4s;
     /*Alternativ:*/
-    /*border-radius: 5px;*/
+    border-radius: 5px;
 }
 
 /* Rotate first bar */
@@ -578,105 +653,131 @@ ul.subpages {
     /* CSS für Tablet und Desktop */
 
     /*          --- Universelle Regeln-T ---            */
-   
-main section {
-    padding: 50px 0 50px 0;
-    margin: 0 auto 0 auto;
-}
+
+    main section {
+        padding: 50px 0 50px 0;
+        margin: 0 auto 0 auto;
+    }
 
 
-h1 {
-    font-size: 64px;
-    
-    margin: 0 auto;
-    padding-top: 50px;
-}
+    h1 {
+        font-size: 64px;
 
-h2 {
-    font-size: 28px;
-    
-    margin: 0 auto;
-}
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    h2 {
+        font-size: 28px;
+
+        margin: 0 auto;
+    }
 
 
-h3 {
-    font-size: 24px;
-    
-    margin: 50px auto;
-}
+    h3 {
+        font-size: 24px;
 
-.col-10 {
-    grid-column: 2/-2;
-}
+        margin: 50px auto;
+    }
+
+    .col-10 {
+        grid-column: 2/-2;
+    }
 
     /*          --- Universelle Regeln-T ENDE---            */
 
-/*          --- section formatierungen-T ---          */
+    /*          --- section formatierungen-T ---          */
 
-/*          --- services-T ---          */
 
-main div.grid-container.services{
-    row-gap: 100px;
+/*          --- Bühnenelement-T ---         */
+
+.bühnenelement div {
+
+    justify-self: center;
+    max-height: 460px;
+    overflow: hidden;
 }
 
-/*          --- services-T ---          */
-
-
-/*          anfahrt-T         */
-
-section#anfahrt div div{
-grid-column: 4/10
-
+.bühnenelement img {
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: none;
 }
 
-/*          anfahrt-T ENDE         */
+/*          --- Bühnenelement-T ENDE---         */
 
-/*          anfahrt-T         */
-    
-    section#anfahrt div div{
-    grid-column: 2/-2
+
+    /*          --- services-T ---          */
+
+    main div.grid-container.services {
+        row-gap: 100px;
     }
 
-/*          anfahrt-T ENDE         */
+    main section.services {
+        background-color: initial;
+    }
 
-/* FOOTER - t */
+    /*          --- services-T ---          */
 
-    footer div.col-4{
+
+    /*          anfahrt-T         */
+
+    section#anfahrt div div {
+        grid-column: 4/10
+    }
+
+    /*          anfahrt-T ENDE         */
+
+    /*          anfahrt-T         */
+
+    section#anfahrt div div {
+        grid-column: 2/-2
+    }
+
+    /*          anfahrt-T ENDE         */
+
+    /* FOOTER - t */
+
+    footer div.col-4 {
         text-align: left;
-        }
-        
-/* FOOTER - t - ende */
-    
-/*          --- Philosophie-T ---           */
+    }
 
-.philosophie .bauchbinde {
-    height: 260px;
-}
+    footer {
+        font-size: 16px;
+    }
 
-.philosophie p{
-    margin-top: 100px;
-    max-width: 1180px;
-}
+    /* FOOTER - t - ende */
 
+    /*          --- Philosophie-T ---           */
 
+    .philosophie .bauchbinde {
+        height: 260px;
+    }
 
-/*          --- Philosophie-T ENDE---           */
-
-
-/*          --- restaurants-T ---           */
-
-section div.restaurants-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1060px;
-    row-gap: 150px;
-    margin: 0 auto;
-}
-
-/*          --- restaurants-T ENDE---           */
+    .philosophie p {
+        margin-top: 100px;
+        max-width: 1180px;
+    }
 
 
-/*          --- section formatierungen-T ENDE---          */
+
+    /*          --- Philosophie-T ENDE---           */
+
+
+    /*          --- restaurants-T ---           */
+
+    section div.restaurants-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 900px;
+        row-gap: 100px;
+        margin: 0 auto;
+    }
+
+    /*          --- restaurants-T ENDE---           */
+
+
+    /*          --- section formatierungen-T ENDE---          */
 
 
     /* CSS für Tablet und Desktop */
@@ -693,11 +794,20 @@ section div.restaurants-grid{
 
     /* CSS für Desktop */
 
+    /*  footer */
+
+    footer {
+        font-size: 18px;
+    }
+
+    /*  footer ENDE */
+
     /*          --- Universelle Regeln-D ---          */
-    
+
     .col-10 {
         grid-column: 2/-2;
     }
+
     h1 {
         font-size: 72px;
     }
@@ -705,20 +815,20 @@ section div.restaurants-grid{
     h2 {
         font-size: 36px;
     }
-   
+
     /*          --- Universelle Regeln-D ENDE---          */
 
     /*          --- Karte-D---          */
 
 
-    div.mapouter.col-12 iframe{
-        border: solid #008B00 1px; 
+    div.mapouter.col-12 iframe {
+        border: solid #008B00 1px;
     }
 
     /*          --- Karte-D ENDE---          */
 
 
-        
+
     /*      ----   2/2 Bereich für NAVIGATION-D unter Desktop hinzufügen   ----        */
 
     .navi #navlinks {
@@ -755,9 +865,10 @@ section div.restaurants-grid{
 
     .navi nav ul.subpages {
         margin: 20px 0 0 0;
+        font-weight: 700;
     }
 
-    
+
     .navi nav a {
         font-size: 14px;
         padding: 0;
@@ -776,7 +887,7 @@ section div.restaurants-grid{
     .navi #navlinks.change {
         background: transparent;
     }
-    
+
     .navi nav .essentials li a {
         display: flex;
         margin-left: 15px;
@@ -784,9 +895,8 @@ section div.restaurants-grid{
 
     /*    ----   2/2 Bereich für NAVIGATION-D ENDE  ----     */
 
-        
-    /*          --- Section formatierungen-D ---            */
 
+    /*          --- Section formatierungen-D ---            */
 
     /*          --- Philosophie-D ---           */
 
@@ -797,9 +907,10 @@ section div.restaurants-grid{
     /*          --- Philosophie-D ENDE---           */
 
     /*          --- impressum-artikel-D ---         */
-    .impressum-artikel p{
+    .impressum-artikel p {
         grid-column: 2/-2;
     }
+
     /*          --- impressum-artikel-D ENDE ---     */
 
 
@@ -807,9 +918,10 @@ section div.restaurants-grid{
     section .news-artikel {
         grid-column: 2/-2;
     }
+
     /*      --- News Artikel-D ENDE ---        */
-    
-/*          --- section Formatierungen-D ENDE---          */
+
+    /*          --- section Formatierungen-D ENDE---          */
 
     /* CSS für Desktop */
 }
