@@ -1,3 +1,6 @@
+#bildtop {
+    margin: 0 auto;}
+
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -26,7 +29,7 @@ header {
         background-image: url(../images/cover-smart.png);
         background-repeat: no-repeat;
         background-position: center;
-        height: 300px; 
+        /* height: 300px;  */
         margin: 0;
         margin-top: 20px;
     }

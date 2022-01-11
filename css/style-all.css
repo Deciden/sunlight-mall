@@ -15,7 +15,7 @@ header {
 */
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px; 
+    height: 160px;
     margin: 0;
     margin-top: 20px;
 }
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 div.green h6 {
-	padding: 20px 0;
+    padding: 20px 0;
 }
 
 h1 {
@@ -223,6 +223,7 @@ footer{
     font-size: 14px;
 }
 footer a {
+    text-decoration: initial;
     color: #fff;
 }
 
@@ -244,18 +245,6 @@ footer a {
     .logo {
         grid-column: span 3;
         margin-top: 5px;
-    }
-    header {
-/*
-        
-        background-image: url(../images/cover-xxx-tablet.jpg);
-    1300x500px 
-        
-        background-position: center -100px; !zB falls nötig
-*/
-
-        
-        height: 400px; 
     }
    
     .handy {
@@ -344,17 +333,7 @@ footer a {
         grid-template-columns: repeat(12, 1fr); 
         max-width: 1180px;
     }
-    header {
-/*
-        background-image: url(../images/cover-xxx-pc.jpg);
-    2000x780px
-        background-position: center -200px;
-*/
 
-        
-        height: 550px; 
-    }
-   
     .col-3 {
         grid-column: span 3;
     }
@@ -372,7 +351,8 @@ footer a {
         display: inherit;
     }
     .p-o-50 {
-        padding-top: 50px;
+        padding-top: 20px;
+        height: 90px;
     }
     h1 {
         font-size: 72px;
@@ -417,6 +397,25 @@ footer a {
 }
 
 
+.knopf:focus {
+    outline: none;
+}
+
+.knopf:hover {
+    transform: scale(104%);
+    transition: 0.05s;
+    background-color: white;
+    border: solid 2px #008B00;
+}
+
+.knopf:active {
+    transform: scale(96%);
+}
+
+.knopf:enabled {
+    transform: scale(96%);
+    /* text-decoration: underline #008B00 3px; */
+}
     
     
     
