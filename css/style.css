@@ -106,7 +106,7 @@ h3 {
 .infobox {
     /* justify-self: center; */
     height: 370px;
-    max-width: 380px;
+    width: 380px;
     margin: 0 auto;
 }
 
