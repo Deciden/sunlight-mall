@@ -406,6 +406,7 @@ footer a {
     transition: 0.05s;
     background-color: white;
     border: solid 2px #008B00;
+    cursor: pointer;
 }
 
 .knopf:active {
