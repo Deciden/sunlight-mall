@@ -324,6 +324,28 @@ section.center-links a#nolink:hover{
     
 }
 
+.knopf:focus {
+    outline: none;
+}
+
+.knopf:hover {
+    transform: scale(104%);
+    transition: 0.05s;
+    background-color: white;
+    border: solid 2px #008B00;
+    color: black
+}
+
+.knopf:active {
+    transform: scale(96%);
+}
+
+.knopf:enabled {
+    transform: scale(96%);
+    /* text-decoration: underline #008B00 3px; */
+}
+
+
 /*      --- Link Pseudo elemente ENDE---    */
 
 /*          --- Center-Links-M ENDE ---         */
